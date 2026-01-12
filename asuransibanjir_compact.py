@@ -29,7 +29,7 @@ except locale.Error:
 
 # Konfigurasi halaman Streamlit
 st.set_page_config(page_title="Asuransi Banjir Askrindo", page_icon="ikon/logo_Askrindo.jpg", layout="wide")
-st.logo("ikon/logo_Askrindo.jpg", icon_image="ikon/logo_Askrindo.jpg")
+st.sidebar.image("ikon/logo_Askrindo.jpg", width=160)
 st.title("🌊 Web Application Flood Insurance Askrindo")
 
 st.write("##### Untuk memahami Dashboard secara keseluruhan dapat mengakses link https://drive.google.com/file/d/15ehrqGegyiQHTNk_TV6bZ45BkPusBhOA/view?usp=sharing")
