@@ -1,0 +1,13 @@
+streamlit
+pandas
+geopandas
+shapely
+fiona
+folium
+streamlit-folium
+streamlit-aggrid
+altair
+pydeck
+plotly
+leafmap
+Pillow
