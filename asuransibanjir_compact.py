@@ -28,8 +28,8 @@ except locale.Error:
     locale.setlocale(locale.LC_TIME, '')  # Fallback to default locale if id_ID is unavailable
 
 # Konfigurasi halaman Streamlit
-st.set_page_config(page_title="Asuransi Banjir Askrindo", page_icon="assets/Logo Askrindo (Kotak).jpeg", layout="wide")
-st.logo("assets/Logo Askrindo BUMN.png", icon_image="ikon/logo_Askrindo.jpg")
+st.set_page_config(page_title="Asuransi Banjir Askrindo", page_icon="ikon/logo_Askrindo.jpg", layout="wide")
+st.logo("ikon/logo_Askrindo.jpg", icon_image="ikon/logo_Askrindo.jpg")
 st.title("🌊 Web Application Flood Insurance Askrindo")
 
 st.write("##### Untuk memahami Dashboard secara keseluruhan dapat mengakses link https://drive.google.com/file/d/15ehrqGegyiQHTNk_TV6bZ45BkPusBhOA/view?usp=sharing")
