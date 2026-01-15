@@ -126,8 +126,8 @@ if csv_file:
             .str.replace(r"[^0-9\.-]", "", regex=True)
         )
 
-    image = Image.open("assets/Flowchart Asuransi Banjir.png")
-    st.image(image, use_container_width=True)
+    #image = Image.open("assets/Flowchart Asuransi Banjir.png")
+    #st.image(image, use_container_width=True)
 
     lon_col = "Longitude"
     lat_col = "Latitude"
