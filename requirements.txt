@@ -11,3 +11,4 @@ pydeck
 plotly
 leafmap
 Pillow
+xlsxwriter
