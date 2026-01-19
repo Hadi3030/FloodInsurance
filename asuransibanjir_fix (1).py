@@ -214,8 +214,8 @@ if csv_file:
             """, unsafe_allow_html=True)
 
             # Data untuk tabel rate
-            image = Image.open("assets/Estimated Loss.png")
-            st.image(image)
+            # image = Image.open("assets/Estimated Loss.png")
+            # st.image(image)
 
             # Step 6: Hitung rate berdasarkan risiko dan okupasi
             if 'Kategori Risiko' in final.columns:
