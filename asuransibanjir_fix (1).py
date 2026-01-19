@@ -109,8 +109,8 @@ if csv_file:
         )
 
     # Gambar flowchart
-    image = Image.open("assets/Flowchart Asuransi Banjir.png")
-    st.image(image, use_container_width=True)
+    # image = Image.open("assets/Flowchart Asuransi Banjir.png")
+    # st.image(image, use_container_width=True)
 
     # Kolom koordinat
     lon_col = "Longitude"
