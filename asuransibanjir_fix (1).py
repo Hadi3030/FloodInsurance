@@ -456,7 +456,7 @@ if csv_file:
                             "padding": "5px",
                         },
                     },
-                    map_style="map_style"="mapbox://styles/mapbox/streets-v12"
+                    map_style="mapbox://styles/mapbox/streets-v12"
                 )
 
                 # Tampilkan map
