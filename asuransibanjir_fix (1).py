@@ -447,19 +447,12 @@ if csv_file:
                     initial_view_state=pdk.ViewState(
                         latitude=float(final[lat_col].median()),
                         longitude=float(final[lon_col].median()),
-                        zoom=9,
-                        pitch=0
+                        zoom=8
                     ),
-                    map_style="mapbox://styles/mapbox/streets-v12",
-                    tooltip={
-                        "html": "{popup}",
-                        "style": {
-                            "backgroundColor": "white",
-                            "color": "black",
-                            "fontSize": "12px"
-                        }
-                    }
+                    map_style=None,
+                    tooltip={"html": "{popup}"}
                 )
+
                 
                 st.pydeck_chart(deck, use_container_width=True, height=750)
 
