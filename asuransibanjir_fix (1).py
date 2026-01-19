@@ -444,20 +444,41 @@ if csv_file:
                 # Combine semua layer ke dalam Deck
                 deck = pdk.Deck(
                     layers=[heatmap_layer, scatter_layer],
-                    initial_view_state=view_state,
+                    initial_view_state=pdk.ViewState(
+                        latitude=float(final[lat_col].median()),
+                        longitude=float(final[lon_col].median()),
+                        zoom=9,
+                        pitch=0
+                    ),
+                    map_style="mapbox://styles/mapbox/streets-v12",
                     tooltip={
                         "html": "{popup}",
                         "style": {
                             "backgroundColor": "white",
                             "color": "black",
-                            "fontSize": "12px",
-                            "lineHeight": "1",
-                            "maxWidth": "200px",
-                            "padding": "5px",
-                        },
-                    },
-                    map_style="mapbox://styles/mapbox/streets-v12"
+                            "fontSize": "12px"
+                        }
+                    }
                 )
+                
+                st.pydeck_chart(deck, use_container_width=True, height=750)
+
+                # deck = pdk.Deck(
+                #     layers=[heatmap_layer, scatter_layer],
+                #     initial_view_state=view_state,
+                #     tooltip={
+                #         "html": "{popup}",
+                #         "style": {
+                #             "backgroundColor": "white",
+                #             "color": "black",
+                #             "fontSize": "12px",
+                #             "lineHeight": "1",
+                #             "maxWidth": "200px",
+                #             "padding": "5px",
+                #         },
+                #     },
+                #     map_style="mapbox://styles/mapbox/streets-v12"
+                # )
 
                 # Tampilkan map
                 st.pydeck_chart(deck, use_container_width=True, height=750, width=1000)
